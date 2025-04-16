@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Alex Stoddard">
+    <meta name="description" content="Welcome to Playing D&D - Making the Best D&D Experience">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="homepage.css">
+    <title>Playing D&D - Home</title>
+</head>
+
+<body>
+    <header>
+        <span>Playing D&D</span>
+        <p>Your trusted resource in <em>Player's Guides</em></p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Welcome to Playing D&D</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="lore.html"> Forgotten Realms</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="character.html">Character Creation</a></li>
+            <li><a href="story.html">Backstory Builder</a></li>
+        </ul>
+    </nav>
+
+    <main>
+      <h1>Create Your D&D Character</h1>
+      
+      <h2>Step 1: Choose Your Race</h2>
+      <p>Your race determines a lot of things. This can be how your character is treated by others, the kind of culture you live in, your innate abilities, and where you are from. However, feel free to create something unique, your only limit is your imagination!</p>
+      <h3>Possible Races</h3>
+      <p>Here are some you can choose from:</p>
+      <ul>
+          <li>Elf- Blessed with longevity, and powers from their fairy ancestors.</li>
+          <li>Human- Generally the most abundant race. They have great potential and will.</li>
+          <li>Dwarf- Hearty stonemasons who love beer and a good brawl.</li>
+          <li>Dragonborn- Unleash the power of your draconic blood.</li>
+      </ul>
+      <h2>Step 2: Choose a Class</h2>
+      <p>This determines your role in battle and roleplay. Your class can help you with your backstory or the other way around.</p>
+      <h3>Your choices can be:</h3>
+      <ul>
+          <li>Bard- control magic with the arts.</li>
+          <li>Fighter- A skilled combatant.</li>
+          <li>Sorcerer- use your bloodline to cast spells.</li>
+          <li>Cleric- call upon the gods to help or mete punishment.</li>
+          
+      </ul>
+
+      <h2>Step 3: Choose your Skills</h2>
+      <p>With many skills to choose from, you can make your character truly unique.</p>
+      <h3>You can be skilled in:</h3>
+      <ul>
+          <li>History- Remember past events</li>
+          <li>Perception- always be aware of your surroundings</li>
+          <li>Insight- sense deceit or true intentions</li>
+          <li>Stealth- become unnoticable and stalk your target</li>
+          <li>Survival- hunt, navigate the wilderness</li>
+      </ul>
+
+      <h2>Let Us Provide You a Method to Gather Your Thoughts</h2>
+        <form method="get" class="charform" action="congrats.html">
+        
+        <fieldset>
+            <legend>Character Information</legend>
+            <label>Player Name*<input type="text" name="pname" required></label>
+            <label>Character Name*<input type="text" name="cname" required></label>
+            <label>Date Created*<input type="date" name="cdate" required></label>
+            <label>Player Email*<input type="email" name="mail" required></label>
+            <label>Cell Number*<input type="tel" name="tele" required></label>   
+            </fieldset>
+        <fieldset>
+            <legend>Race</legend>
+              <select name="race">
+              <option value="none">Please Select</option>
+              <option value="elf">Elf</option>
+              <option value="human">Human</option>
+              <option value="dwarf">Dwarf</option>
+              <option value="dborn">Dragonborn</option>
+              </select>
+        </fieldset>
+
+        <fieldset>
+        <legend>Class</legend>
+            <label><input type="radio" name="method" value="music"> Bard</label>
+            <label><input type="radio" name="method" value="sword"> Fighter</label>
+            <label><input type="radio" name="method" value="blood"> Sorcerer</label>
+            <label><input type="radio" name="method" value="divine"> Cleric</label>
+
+        </fieldset>
+        <fieldset>
+          <legend>Skills (choose two)</legend>
+              <label><input type="checkbox" name="hist" value="chosen"> History</label>
+              <label><input type="checkbox" name="per" value="chosen"> Perception</label>
+              <label><input type="checkbox" name="ins" value="chosen"> Insight</label>
+              <label><input type="checkbox" name="sth" value="chosen"> Stealth</label>
+              <label><input type="checkbox" name="sur" value="chosen"> Survival</label>
+              <label>Make Your Own (and describe it) <textarea name="extra" rows="4" cols="40"></textarea></label>
+        </fieldset>
+
+
+        <input type="submit" value="Submit Character">    
+        </form>
+    </main>
+    
